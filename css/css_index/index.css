@@ -1,10 +1,11 @@
 #content_title{
     display: flex;
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     margin-top: 20px;
     margin-left: 10px;
     text-align: center;
+    justify-content: center;
 }
 
 .contents_block{
@@ -15,11 +16,12 @@
 }
 
 .content_foto{
-
+    display: flex;
 }
 
 #photo{
-    width: 100%;
+    width: 400px;
+    height: 300px;
 }
 
 .content_text{
@@ -30,8 +32,10 @@
 }
 
 .description{
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     line-height: 30px;
     margin: 40px;
+    margin-top: -40px;
+    font-size: 18px;
 }

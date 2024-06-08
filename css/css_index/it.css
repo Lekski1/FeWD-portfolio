@@ -28,7 +28,7 @@
 }
 
 #my_name{
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-size: 40px;
     font-weight: bold;
@@ -48,21 +48,21 @@
 }
 
 #technical_skills{
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-size: 20px;
     font-weight: 500;
 }
 
 #all_skills{
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     color: grey;
 }
 
 .technical_profiles_link {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     text-decoration: none;
@@ -91,7 +91,7 @@
     display: inline-block;
     margin-right: 100px; 
     margin-left: 100px; 
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-size: 20px;
 }
@@ -101,14 +101,14 @@
 }
 
 .main_title{
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-size: 32px;
     font-weight: 800;
 }
 
 .submain_title{
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-size: 24px;
     font-weight: 600;
@@ -117,7 +117,7 @@
 }
 
 .experience_description{
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-size: 20px;
     font-weight: 350;
