@@ -1,6 +1,7 @@
 #main_block {
     display: flex;
     margin-top: 20px;
+    margin-bottom: 50px
 }
 
 #left_block {
