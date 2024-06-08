@@ -1,0 +1,37 @@
+#content_title{
+    display: flex;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.contents_block{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 100px;
+}
+
+.content_foto{
+
+}
+
+#photo{
+    width: 100%;
+}
+
+.content_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.description{
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 30px;
+    margin: 40px;
+}
