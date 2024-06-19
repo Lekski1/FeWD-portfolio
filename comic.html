@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mametov Eldar Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/main.css" type='text/css'>
+        <link rel="stylesheet" href="./css/css_index/comic.css" type='text/css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main">
+            <div id="bar">
+                <div id="name_section">
+                    <h1 id="site_name">M.E.Blog</h1>
+                </div>
+                <div id="other_section_block">
+                    <div id="other_section">
+                        <a href='index.html' class="other_name">
+                            <img src="./icon/WhoIam.png" alt="Who I am icon">Who I am
+                            <span class="underline"></span>
+                        </a>
+                        <a href='blog.html' class="other_name">
+                            <img src="./icon/Blog.png" alt="Blog">Blog
+                            <span class="underline"></span>
+                        </a>
+                        <a href='it.html' class="other_name">
+                            <img src="./icon/IT.png" alt="IT">IT
+                            <span class="underline"></span>
+                        </a>
+                        <a href='contact.html' class="other_name">
+                            <img src="./icon/Contact.png" alt="Contact">Contact
+                            <span class="underline"></span>
+                        </a>
+                        <a href='comic.html' class="other_name">
+                            <img src="./icon/comic.png" alt="Comic">Comic
+                            <span class="underline"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <h1 id="content_title">Here you can relax a bit by getting jokes using your Innopolis mail</h1>
+                <div class="main_comic_block">
+                    <div id="comic_request">
+                        <label class="title_request" for="email">Enter Innopolis email:
+                            <input type="email" id="email" class="input_email" placeholder="e.example@innopolis.university">
+                        </label>
+                        <button id="get_comic_button" class="button_comic_request">Get comic</button>
+                    </div>
+                    <div id="comic_response">
+                        <img id="comic_img" alt="#">
+                        <p id="comic_name"></p>
+                        <p id="comic_description"></p>
+                        <p id="comic_date"></p>
+                    </div>
+                </div> 
+            </div>
+            <script src="./js/get_comic.js"></script>
+        </body>
+    </html>
