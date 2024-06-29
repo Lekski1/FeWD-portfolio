@@ -1,0 +1,41 @@
+#content_title{
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contents_block{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 100px;
+}
+
+.content_foto{
+    display: flex;
+}
+
+#photo{
+    width: 400px;
+    height: 300px;
+}
+
+.content_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.description{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 30px;
+    margin: 40px;
+    margin-top: -40px;
+    font-size: 18px;
+}
