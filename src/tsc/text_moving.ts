@@ -1,11 +1,13 @@
-const links = document.querySelectorAll('.other_name');
+export const textMoving = () => {
+    const links = document.querySelectorAll<HTMLAnchorElement>('.other_name');
+
     links.forEach(link => {
-        document.addEventListener('mousemove', (event) => {
+        document.addEventListener('mousemove', (event: MouseEvent) => {
             const rect = link.getBoundingClientRect();
             const positionX = event.clientX - rect.left - (rect.width / 3);
             const positionY = event.clientY - rect.top - (rect.height / 3);
             const distance = Math.sqrt(positionX * positionX + positionY * positionY);
-            const maxDistance = 65; 
+            const maxDistance = 65;
 
             if (distance < maxDistance) {
                 const ag = Math.atan2(positionY, positionX);
@@ -15,3 +17,4 @@ const links = document.querySelectorAll('.other_name');
             }
         });
     });
+};
