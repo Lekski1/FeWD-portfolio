@@ -59,7 +59,7 @@ const Comic: React.FC = () => {
             Enter Innopolis email:
             <input type="email" id={styles.email} className={styles.input_email} placeholder="e.example@innopolis.university" value={email} onChange={(e) => setEmail(e.target.value)} />
           </label>
-          <button id={styles.get_comic_button} className={styles.button_comic_request} onClick={getComicHandler} >
+          <button id={styles.get_comic_button} className={styles.button_comic_request} type="submit">
             Get comic
           </button>
         </div>
