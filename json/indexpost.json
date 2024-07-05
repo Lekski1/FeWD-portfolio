@@ -1,12 +1,12 @@
 [
     {
         "id": 1,
-        "foto": "/img/index/photo1.png",
+        "foto": "./img/index/photo1.png",
         "description": "My name is Eldar. I come from the Republic of Dagestan, to be more precise, from the small village of Ashaga-Kartas, which is located in the Suleman-Stalsky district. My childhood passed, like all the other boys, I played with friends from the village, we often built something, you know, such small houses that children usually make. We explored the surroundings of the village and had fun. Then I went to school and just studied, not to say that I really loved it. I moved around a lot, so I have well-developed communication skills, as I always needed to find new friends. In high school, I took up my studies more seriously, I enjoyed studying and devoted all my time to studying."
     },
     {
         "id": 2,
-        "foto": "/img/index/photo2.png",
+        "foto": "./img/index/photo2.png",
         "description": "Then, after graduating from school, I entered the University of Wyższa Szkoła Informatyki Stosowanej i Zarządzania pod auspicjami Polskiej Akademii Nauk, which was located in Warsaw, as I always wanted to study somewhere abroad to gain new experience. After a year of study, due to certain circumstances, I transferred to Innopolis University, where I continue my studies and try to implement my projects by pumping myself."
     }
 ]

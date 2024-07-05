@@ -46,13 +46,13 @@ export default function Contact() {
       <div id={styles.my_contact}>
         <p id={styles.please_write}>please write to me only at the time I specified, so our dialogue will be built much better 😊</p>
         <a href="https://t.me/eldarlek" target="_blank" className={styles.technical_profiles_link}>
-          <img src="/icon/telegram.png" alt="Contact" /> Telegram
+          <img src="./icon/telegram.png" alt="Contact" /> Telegram
         </a>
         <a href="mailto:e.mametov@innopolis.university" target="_blank" className={styles.technical_profiles_link} >
-          <img src="/icon/mail.png" alt="Contact" /> e.mametov@innopolis.university
+          <img src="./icon/mail.png" alt="Contact" /> e.mametov@innopolis.university
         </a>
         <a href="https://www.instagram.com/55_eldar" target="_blank" className={styles.technical_profiles_link} >
-          <img src="/icon/Instagram.png" alt="Contact" /> Instagram*
+          <img src="./icon/Instagram.png" alt="Contact" /> Instagram*
         </a>
         <p>*a social network banned on the territory of the Russian Federation</p>
       </div>
