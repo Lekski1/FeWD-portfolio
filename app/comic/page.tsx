@@ -55,39 +55,27 @@ export default function ComicPage() {
   };
 
   return (
-    <div id={styles.content}>
-      <h1 id={styles.content_title}>
-        Here you can relax a bit by getting jokes using your Innopolis mail
-      </h1>
+<div id={styles.content}>
+      <h1 id={styles.content_title}>Here you can relax a bit by getting jokes using your Innopolis mail</h1>
       <div className={styles.main_comic_block}>
-        <form onSubmit={handleSubmit}>
-          <div id={styles.comic_request}>
-            <label className={styles.title_request} htmlFor="email">
-              Enter Innopolis email:
-              <input
-                type="email"
-                id={styles.email}
-                className={styles.input_email}
-                placeholder="e.example@innopolis.university"
-                name="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </label>
-            <button id={styles.get_comic_button} className={styles.button_comic_request} type="submit">
-              Get comic
-            </button>
-          </div>
-        </form>
-        <div id={styles.comic_response} style={{ display: displayComic }}>
+        <div id={styles.comic_request}>
+          <label className={styles.title_request} htmlFor="email">
+            Enter Innopolis email:
+            <input type="email" id={styles.email} className={styles.input_email} placeholder="e.example@innopolis.university" value={email} onChange={(e) => setEmail(e.target.value)} />
+          </label>
+          <button id={styles.get_comic_button} className={styles.button_comic_request} onClick={getComicHandler} >
+            Get comic
+          </button>
+        </div>
+        <div id={styles.comic_response} style={{ display: displayComic }} >
           {comicData && (
             <>
               <img id={styles.comic_img} src={comicData.img} alt={comicData.alt} />
               <p id={styles.comic_name}>{comicData.safe_title}</p>
               <p id={styles.comic_description}>{comicData.alt}</p>
               <p id={styles.comic_date}>
-                Date of publication: {format(new Date(`${comicData.year}-${comicData.month}-${comicData.day}`), 'PP')}
+                Date of publication:{' '}
+                {format(new Date(`${comicData.year}-${comicData.month}-${comicData.day}`), 'PP')}
               </p>
             </>
           )}
