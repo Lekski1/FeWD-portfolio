@@ -1,0 +1,74 @@
+#content {
+    background: white;
+    height: 100%;
+    margin-left: 41vh;
+    margin-right: 1vh;
+    overflow-y: auto; 
+}
+
+#content{
+    display: flex;
+
+}
+
+#table_block{
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+.top_column{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+}
+
+.date_cell{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.time_cell{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-size:20px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+#my_contact{
+    display: inline;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.technical_profiles_link {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    text-decoration:underline;
+    margin-top: 20px;
+}
+
+.technical_profiles_link img {
+    margin-right: 8px; 
+    width: 24px; 
+    height: 24px; 
+    
+}
+
+#please_write{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 24px;
+
+}
