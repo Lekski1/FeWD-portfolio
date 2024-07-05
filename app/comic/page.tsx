@@ -1,8 +1,9 @@
+"use client";
+
+import { useState } from 'react';
 import { format } from 'date-fns';
 import styles from '@/styles/css_index/comic.module.css';
-import fetch from 'node-fetch';
 import cheerio from 'cheerio';
-
 
 interface Comic {
   month: string;
@@ -28,7 +29,6 @@ async function getComicId(email: string): Promise<string> {
   return $('body').text().trim();
 }
 
-
 async function getComic(idForComic: string): Promise<Comic> {
   const comicResponse = await fetch(
     `https://fwd.innopolis.university/api/comic?id=${idForComic}`,
@@ -36,20 +36,23 @@ async function getComic(idForComic: string): Promise<Comic> {
   return await comicResponse.json() as Comic;
 }
 
-export default async function ComicPage({ searchParams }: { searchParams: { email?: string } }) {
-  const email = searchParams.email || '';
-  let comicData: Comic | null = null;
-  let displayComic = 'none';
+export default function ComicPage() {
+  const [email, setEmail] = useState('');
+  const [comicData, setComicData] = useState<Comic | null>(null);
+  const [displayComic, setDisplayComic] = useState('none');
 
-  if (email) {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
     try {
       const idForComic = await getComicId(email);
-      comicData = await getComic(idForComic);
-      displayComic = 'flex';
+      const comic = await getComic(idForComic);
+      setComicData(comic);
+      setDisplayComic('flex');
     } catch (error) {
       console.error('Error fetching comic:', error);
     }
-  }
+  };
 
   return (
     <div id={styles.content}>
@@ -57,7 +60,7 @@ export default async function ComicPage({ searchParams }: { searchParams: { emai
         Here you can relax a bit by getting jokes using your Innopolis mail
       </h1>
       <div className={styles.main_comic_block}>
-        <form action="/comic" method="get">
+        <form onSubmit={handleSubmit}>
           <div id={styles.comic_request}>
             <label className={styles.title_request} htmlFor="email">
               Enter Innopolis email:
@@ -67,7 +70,9 @@ export default async function ComicPage({ searchParams }: { searchParams: { emai
                 className={styles.input_email}
                 placeholder="e.example@innopolis.university"
                 name="email"
-                defaultValue={email}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
               />
             </label>
             <button id={styles.get_comic_button} className={styles.button_comic_request} type="submit">
