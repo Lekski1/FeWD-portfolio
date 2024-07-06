@@ -1,8 +1,6 @@
-"use client";
-
-import { useState } from 'react';
 import { format } from 'date-fns';
 import styles from '@/styles/css_index/comic.module.css';
+import fetch from 'node-fetch';
 import cheerio from 'cheerio';
 
 interface Comic {
@@ -36,33 +34,28 @@ async function getComic(idForComic: string): Promise<Comic> {
   return await comicResponse.json() as Comic;
 }
 
-export default function ComicPage() {
-  const [email, setEmail] = useState('');
-  const [comicData, setComicData] = useState<Comic | null>(null);
-  const [displayComic, setDisplayComic] = useState('none');
+export default async function ComicPage() {
+  const defaultEmail = 'e.mametov@innopolis.university';
+  let comicData: Comic | null = null;
+  let displayComic = 'none';
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    try {
-      const idForComic = await getComicId(email);
-      const comic = await getComic(idForComic);
-      setComicData(comic);
-      setDisplayComic('flex');
-    } catch (error) {
-      console.error('Error fetching comic:', error);
-    }
-  };
+  try {
+    const idForComic = await getComicId(defaultEmail);
+    comicData = await getComic(idForComic);
+    displayComic = 'flex';
+  } catch (error) {
+    console.error('Error fetching comic:', error);
+  }
 
   return (
     <div id={styles.content}>
       <h1 id={styles.content_title}>Here you can relax a bit by getting jokes using your Innopolis mail</h1>
       <div className={styles.main_comic_block}>
-        <form onSubmit={handleSubmit}>
+        <form action="/comic" method="get">
           <div id={styles.comic_request}>
             <label className={styles.title_request} htmlFor="email">
               Enter Innopolis email:
-              <input type="email" id={styles.email} className={styles.input_email} placeholder="e.example@innopolis.university" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+              <input type="email" id={styles.email} className={styles.input_email} placeholder="e.example@innopolis.university" name="email" defaultValue={defaultEmail}/>
             </label>
             <button id={styles.get_comic_button} className={styles.button_comic_request} type="submit">
               Get comic
@@ -75,9 +68,7 @@ export default function ComicPage() {
               <img id={styles.comic_img} src={comicData.img} alt={comicData.alt} />
               <p id={styles.comic_name}>{comicData.safe_title}</p>
               <p id={styles.comic_description}>{comicData.alt}</p>
-              <p id={styles.comic_date}>
-                Date of publication: {format(new Date(`${comicData.year}-${comicData.month}-${comicData.day}`), 'PP')}
-              </p>
+              <p id={styles.comic_date}>Date of publication: {format(new Date(`${comicData.year}-${comicData.month}-${comicData.day}`), 'PP')}</p>
             </>
           )}
         </div>
