@@ -35,12 +35,12 @@ async function getComic(idForComic: string): Promise<Comic> {
 }
 
 export default async function ComicPage() {
-  const defaultEmail = 'e.mametov@innopolis.university';
+  const defaultemail = 'e.mametov@innopolis.university';
   let comicData: Comic | null = null;
   let displayComic = 'none';
 
   try {
-    const idForComic = await getComicId(defaultEmail);
+    const idForComic = await getComicId(defaultemail);
     comicData = await getComic(idForComic);
     displayComic = 'flex';
   } catch (error) {
@@ -54,10 +54,10 @@ export default async function ComicPage() {
         <form action="/comic" method="get">
           <div id={styles.comic_request}>
             <label className={styles.title_request} htmlFor="email">
-              Enter Innopolis email:
-              <input type="email" id={styles.email} className={styles.input_email} placeholder="e.example@innopolis.university" name="email" defaultValue={defaultEmail}/>
+              It doesn't work for 6HW: 
+              <input type="email" id={styles.email} className={styles.input_email} placeholder="e.example@innopolis.university" name="email" defaultValue={defaultemail}/>
             </label>
-            <button id={styles.get_comic_button} className={styles.button_comic_request} type="submit">
+            <button id={styles.get_comic_button} className={styles.button_comic_request} type="submit" disabled>
               Get comic
             </button>
           </div>
