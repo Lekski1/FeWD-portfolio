@@ -54,7 +54,7 @@ export default async function ComicPage() {
         <form action="/comic" method="get">
           <div id={styles.comic_request}>
             <label className={styles.title_request} htmlFor="email">
-              It doesnt work for 6HW: 
+              It doesn&apos;t work for 5HW: 
               <input type="email" id={styles.email} className={styles.input_email} placeholder="e.example@innopolis.university" name="email" defaultValue={defaultemail}/>
             </label>
             <button id={styles.get_comic_button} className={styles.button_comic_request} type="submit" disabled>
