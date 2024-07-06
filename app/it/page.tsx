@@ -7,7 +7,7 @@ export default function It() {
       <div id={styles.main_block}>
         <div id={styles.left_block}>
           <div id={styles.foto}>
-            <img id={styles.my_foto} src="/img/it/it_foto1.jpg" alt="my foto" />
+            <img id={styles.my_foto} src="./img/it/it_foto1.jpg" alt="my foto" />
           </div>
           <div id={styles.skills}>
             <p id={styles.technical_skills}>Technical skills:</p>
@@ -34,10 +34,10 @@ export default function It() {
           <div id={styles.skills} style={{ marginTop: '20px' }}>
             <p id={styles.technical_skills}>Technical profiles:</p>
             <a href="https://leetcode.com/eldart98764/" className={styles.technical_profiles_link}>
-              <img src="/icon/leetcode.png" alt="Contact" /> Leetcode
+              <img src="./icon/leetcode.png" alt="Contact" /> Leetcode
             </a>
             <a href="https://github.com/Mametov23" className={styles.technical_profiles_link} >
-              <img src="/icon/github.png" alt="Contact" /> GitHub
+              <img src="./icon/github.png" alt="Contact" /> GitHub
             </a>
           </div>
         </div>
