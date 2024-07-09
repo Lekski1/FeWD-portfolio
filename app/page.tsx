@@ -1,7 +1,7 @@
 import styles from '../styles/css_index/index.module.css';
 import indexpost from '../json/indexpost.json';
 import React from 'react';
-
+//специально для комита
 interface IndexPost {
     id: number;
     foto: string;
