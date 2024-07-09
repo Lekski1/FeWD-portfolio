@@ -3,13 +3,13 @@
     height: 100%;
     margin-left: 41vh;
     margin-right: 1vh;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
 #main_block {
     display: flex;
     margin-top: 20px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
 
 #left_block {
@@ -31,13 +31,13 @@
 }
 
 #my_foto {
-    max-width: 100%; 
-    max-height: 100%; 
-    object-fit: contain; 
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
-#my_name{
-    font-family: "Quicksand", sans-serif;
+#my_name {
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     font-size: 40px;
     font-weight: bold;
@@ -46,50 +46,48 @@
 }
 
 #right_block {
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 #experience_block {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     flex-direction: column;
 }
 
-#technical_skills{
-    font-family: "Quicksand", sans-serif;
+#technical_skills {
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     font-size: 20px;
     font-weight: 500;
 }
 
-#all_skills{
-    font-family: "Quicksand", sans-serif;
+#all_skills {
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     color: grey;
 }
 
 .technical_profiles_link {
-    font-family: "Quicksand", sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     text-decoration: none;
     display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
+    align-items: center;
+    justify-content: flex-start;
     margin-top: 5px;
     color: grey;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .technical_profiles_link img {
-    margin-right: 8px; 
-    width: 24px; 
-    height: 24px; 
-    
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
 }
-
 
 #birth_and_residence {
     margin-top: 10px;
@@ -98,26 +96,26 @@
 
 #birth_and_residence_text {
     display: inline-block;
-    margin-right: 100px; 
-    margin-left: 100px; 
-    font-family: "Quicksand", sans-serif;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     font-size: 20px;
 }
 
-.experience{
+.experience {
     margin-top: 40px;
 }
 
-.main_title{
-    font-family: "Quicksand", sans-serif;
+.main_title {
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     font-size: 32px;
     font-weight: 800;
 }
 
-.submain_title{
-    font-family: "Quicksand", sans-serif;
+.submain_title {
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     font-size: 24px;
     font-weight: 600;
@@ -125,12 +123,12 @@
     color: rgba(26, 25, 25, 0.795);
 }
 
-.experience_description{
-    font-family: "Quicksand", sans-serif;
+.experience_description {
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     font-size: 20px;
     font-weight: 350;
     margin-top: 5px;
-    white-space:pre-wrap;
+    white-space: pre-wrap;
     color: rgba(61, 61, 61, 0.911);
 }

@@ -3,11 +3,11 @@
     height: 100%;
     margin-left: 41vh;
     margin-right: 1vh;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
-#content_title{
+#content_title {
     display: flex;
-    font-family: "Quicksand", sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     margin-top: 20px;
     margin-left: 10px;
@@ -15,7 +15,7 @@
     justify-content: center;
 }
 
-.main_comic_block{
+.main_comic_block {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,8 +24,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.input_email{
-    font-family: "Quicksand", sans-serif;
+.input_email {
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     padding: 8px;
     font-size: 14px;
@@ -34,61 +34,59 @@
     margin-left: 10px;
 }
 
-.button_comic_request{
-    font-family: "Quicksand", sans-serif;
+.button_comic_request {
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     padding: 8px;
     font-size: 14px;
     cursor: pointer;
     background-color: white;
-    transition: background-color 0.2s, transform 0.5s;
+    transition:
+        background-color 0.2s,
+        transform 0.5s;
 }
-
 
 .button_comic_request:hover {
     background-color: rgba(182, 182, 182, 0.041);
     box-shadow: 0 0 10px rgba(3, 3, 3, 0.1);
 }
 
-
 .button_comic_request:active {
     background-color: #e0e0e0;
     transform: scale(0.99);
 }
 
-
-
-.title_request{
-    font-family: "Quicksand", sans-serif;
+.title_request {
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     font-size: 18px;
 }
 
-#comic_response{
+#comic_response {
     display: none;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
 }
 
-#comic_name{
-    font-family: "Quicksand", sans-serif;
+#comic_name {
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     font-size: 18px;
     font-weight: 600;
     margin-top: 10px;
 }
 
-#comic_description{
-    font-family: "Quicksand", sans-serif;
+#comic_description {
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     font-size: 16px;
     margin-top: 10px;
 }
 
-#comic_date{
-    font-family: "Quicksand", sans-serif;
+#comic_date {
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     font-size: 12px;
-    font-weight: 200; 
+    font-weight: 200;
 }

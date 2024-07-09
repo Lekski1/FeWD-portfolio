@@ -1,6 +1,6 @@
-import  styles  from '../../styles/css_index/blog.module.css';
-import blogpost from '../../json/blogpost.json'
-
+import React from 'react';
+import styles from '../../styles/css_index/blog.module.css';
+import blogpost from '../../json/blogpost.json';
 
 interface BlogPost {
     id: number;
@@ -29,4 +29,4 @@ export default function Blog() {
             ))}
         </div>
     );
-};
+}
